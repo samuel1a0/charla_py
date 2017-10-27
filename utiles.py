@@ -114,7 +114,7 @@ def plot_confusion_matrix(cm, classes, title='Confusion matrix', norm=True, size
         cm = np.around(cm / cm.sum(axis=1)[:, np.newaxis], 2)
     thresh = cm.max() / 2.
     
-    cmap = plt.cm.Blues
+    # cmap = plt.cm.Blues
     fig = plt.figure(title, figsize=size)
     plt.clf()
     plt.title(title)
